@@ -225,7 +225,7 @@ line of text and contains the following stats separated by whitespace:
 	mem_used_total
 	mem_limit
 	mem_used_max
-	zero_pages
+	same_pages
 	num_migrated
 
 9) Deactivate:
