@@ -5476,11 +5476,12 @@ static int find_new_capacity(struct energy_env *eenv, int cpu_idx)
 			eenv->cpu[cpu_idx].cap_idx = idx;
 			eenv->cpu[cpu_idx].cap = sge->cap_states[idx].cap;
 			break;
+		}
 	}
 
 	return eenv->cpu[cpu_idx].cap_idx;
 }
-}
+
 static int group_idle_state(struct energy_env *eenv, int cpu_idx)
 {
 	struct sched_group *sg = eenv->sg;
