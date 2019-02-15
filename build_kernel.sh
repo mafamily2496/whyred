@@ -1,11 +1,10 @@
 export CCACHE=ccache
 export DEFCONFIG=whyred-perf_defconfig
 export ARCH=arm64
-export CROSS_COMPILE=/run/media/majiaming/hdd1/gcc-linaro-7.3.1-2018.05-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
-export CLANG_PATH=/run/media/majiaming/hdd1/DragonTC-8.0-master/bin
-export PATH=${CLANG_PATH}:${PATH}
+export CROSS_COMPILE=~/gcc-linaro-7.3.1-2018.05-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
+export CROSS_COMPILE_ARM32=~/gcc-linaro-7.3.1-2018.05-x86_64_arm-linux-gnueabi/bin/arm-linux-gnueabi-
 export CLANG_TRIPLE=aarch64-linux-gnu-
-export OUTDIR=/run/media/majiaming/hdd1/out/whyred
+export OUTDIR=~/out/whyred
 #make mrproper O=$OUTDIR
 make -j4 $DEFCONFIG O=$OUTDIR
 make -j4 O=$OUTDIR
